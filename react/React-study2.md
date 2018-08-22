@@ -72,6 +72,7 @@
           {
             this.state.movies.map((movie, index) => {
               return <Movie title={movie.title} poster={movie.poster} key={index} />
+              {/*복수개의 엘리먼트가 있을땐 고유의 키값이 필요, key={index}가 추가된 */}
             })
           }
         </div>
