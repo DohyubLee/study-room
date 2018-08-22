@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   _getMovies = async () => {  //async는 비동기함수로 선언한다는 의미
-    const movies = await this._callApi(); //await를 함수 호출할때 지정해주면 값이 리턴될때까지 다음 라인으로 넘어가지않는다
+    const movies = await this._callApi(); //await를 함수 호출할때 지정해주면 값이 Promise () 리턴될때까지 다음 라인으로 넘어가지않는다
     this.setState({
       movies
     })
