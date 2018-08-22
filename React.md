@@ -38,37 +38,3 @@ class App extends Component {  //Component를 상속
 
 export default App;
 ```
-- 컴포넌트 추가해보기
-```
-import React, { Component } from 'react';
-import './Movie.css';
-
-class Movie extends Component {
-    render() {
-        console.log(this.props);
-        return (
-            <div>
-                <MoviePoster poster={this.props.poster} />
-                <h1>{this.props.title}</h1>
-            </div>
-        );
-    }
-}
-export default Movie;
-```
-```
-import React, { Component } from 'react';  // 필수적으로 import 해야함
-import './App.css';            //따로 모아놓은 css파일을 import 
-
-class App extends Component {  //Component를 상속
-  render() {                   //컴포넌트에는 꼭 render()가 있어야함
-    return (                   //render()에서 꼭 JSX를 return 해주어야함
-      <div className="App">    //이 html같은 코드는 JSX라고 함
-        <h1>Hello React</h1>
-      </div>
-    );
-  }
-}
-
-export default App;
-```
